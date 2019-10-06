@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SafetyTech;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,12 +11,14 @@ using System.Windows.Forms;
 
 namespace MoneyProtected
 {
+
     public partial class Form1 : Form
     {
         Contabilidad total = new Contabilidad();
         public Form1()
         {
             InitializeComponent();
+           // BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -37,7 +40,7 @@ namespace MoneyProtected
             // Genero un valor random para el total que debe pagar el usuario
             Contabilidad T_U = new Contabilidad();
            int total_usuario = T_U.GenerarTotal();
-            Total_Pequeno.Text = Convert.ToString(total_usuario); //Muestro el valor para debuggear
+            //Total_Pequeno.Text = Convert.ToString(total_usuario); //Muestro el valor para debuggear
 
           // Asumir que billete es el valor total de plata que paga el cliente
           // En realidad se deberia usar otra varable que sume todas las entradas por si se ingresa mas de un billete
@@ -45,7 +48,7 @@ namespace MoneyProtected
 
             //Calcula el cambio que se le debe dar al usuario basado en lo que tiene que pagar y la plata con la que pago
            cambio = compra.Cambio(total_usuario, Billete);
-            Cambioo.Text = Convert.ToString(cambio); //Muestra el valor para debuggear
+            //Cambioo.Text = Convert.ToString(cambio); //Muestra el valor para debuggear
 
             // AQUI notifiquen cuanto es el cambio
 
@@ -54,10 +57,33 @@ namespace MoneyProtected
 
 
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void Nextbtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
+            Form2 frm = new Form2();
+
+            frm.Show();
+            
         }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Form2 frm = new Form2();
+
+            frm.Show();
+        }
+
+        /*private void Ingresobtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Form3 frm = new Form3();
+
+            frm.Show();
+        }*/
+
     }
 }

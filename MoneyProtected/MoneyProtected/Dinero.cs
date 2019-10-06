@@ -8,13 +8,22 @@ namespace MoneyProtected
 {
     class Dinero
     {
-       public int Identificar(int x)
+       public int Identificar(double x)
         {
             int bil=0;
             //En cada if entra los valores de los direntes sensores
-            if (x == 10)
+            if (x == 1)
             {
                 bil = 10;
+
+            }
+            else if (x==0)
+            {
+                bil = 50;
+            }
+            else
+            {
+                bil = 30;
             }
             /*
             if ()

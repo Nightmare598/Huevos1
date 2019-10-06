@@ -28,61 +28,117 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
-            this.Total_Grande = new System.Windows.Forms.Label();
-            this.Total_Pequeno = new System.Windows.Forms.Label();
-            this.Cambioo = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(268, 173);
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.Color.DarkGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(240, 311);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(204, 108);
+            this.button1.Size = new System.Drawing.Size(142, 40);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Text = "Ingresar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
-            // Total_Grande
+            // label3
             // 
-            this.Total_Grande.AutoSize = true;
-            this.Total_Grande.Location = new System.Drawing.Point(627, 99);
-            this.Total_Grande.Name = "Total_Grande";
-            this.Total_Grande.Size = new System.Drawing.Size(51, 20);
-            this.Total_Grande.TabIndex = 1;
-            this.Total_Grande.Text = "label1";
-            this.Total_Grande.Click += new System.EventHandler(this.label1_Click);
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label3.Location = new System.Drawing.Point(136, 145);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 27);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Usuario";
             // 
-            // Total_Pequeno
+            // label4
             // 
-            this.Total_Pequeno.AutoSize = true;
-            this.Total_Pequeno.Location = new System.Drawing.Point(627, 173);
-            this.Total_Pequeno.Name = "Total_Pequeno";
-            this.Total_Pequeno.Size = new System.Drawing.Size(51, 20);
-            this.Total_Pequeno.TabIndex = 2;
-            this.Total_Pequeno.Text = "label2";
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.label4.Location = new System.Drawing.Point(108, 200);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(136, 27);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Contraseña";
             // 
-            // Cambioo
+            // textBox3
             // 
-            this.Cambioo.AutoSize = true;
-            this.Cambioo.Location = new System.Drawing.Point(627, 240);
-            this.Cambioo.Name = "Cambioo";
-            this.Cambioo.Size = new System.Drawing.Size(51, 20);
-            this.Cambioo.TabIndex = 3;
-            this.Cambioo.Text = "label3";
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox3.Location = new System.Drawing.Point(263, 145);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(134, 22);
+            this.textBox3.TabIndex = 3;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox4.Location = new System.Drawing.Point(263, 205);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.PasswordChar = '*';
+            this.textBox4.Size = new System.Drawing.Size(134, 22);
+            this.textBox4.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(122, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(397, 39);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Bienvenido, supervisor";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label6.Location = new System.Drawing.Point(153, 80);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(333, 31);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Por favor, ingrese sus datos";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Cambioo);
-            this.Controls.Add(this.Total_Pequeno);
-            this.Controls.Add(this.Total_Grande);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(600, 428);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,10 +146,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Ingresobtn;
         private System.Windows.Forms.Label Total_Grande;
-        private System.Windows.Forms.Label Total_Pequeno;
-        private System.Windows.Forms.Label Cambioo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button Nextbtn;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 
